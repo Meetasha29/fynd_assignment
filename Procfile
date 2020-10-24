@@ -1,1 +1,1 @@
-web: gunicorn fynd_assigment.wsgi --log-file -
+web: gunicorn wsgi --log-file -
