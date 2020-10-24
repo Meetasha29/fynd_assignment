@@ -97,8 +97,8 @@ class Movie(BaseModel):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(200), index=True)
     director = db.Column(db.String(200), index=True)
-    imdb_score = db.Column(db.Integer, index=True)
-    popularity_99 = db.Column(db.Integer)
+    imdb_score = db.Column(db.Float, index=True)
+    popularity_99 = db.Column(db.Float)
     genre = db.Column(JSONB)
 
     def __repr__(self):

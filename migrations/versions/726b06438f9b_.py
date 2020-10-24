@@ -24,8 +24,8 @@ def upgrade():
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('name', sa.String(length=200), nullable=True),
     sa.Column('director', sa.String(length=200), nullable=True),
-    sa.Column('imdb_score', sa.Integer(), nullable=True),
-    sa.Column('popularity_99', sa.Integer(), nullable=True),
+    sa.Column('imdb_score', sa.Float(), nullable=True),
+    sa.Column('popularity_99', sa.Float(), nullable=True),
     sa.Column('genre', postgresql.JSONB(astext_type=sa.Text()), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )

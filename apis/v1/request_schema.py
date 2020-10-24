@@ -73,8 +73,8 @@ class MovieRequestSchema:
     MovieCreate = api.model('MovieCreate', {
         'name': fields.String(desciption='movie name', required=True),
         'director': fields.String(desciption='movie_director', required=True),
-        'imdb_score': fields.Integer(desciption='imdb score'),
-        'popularity_99': fields.Integer(description='popularity_99'),
+        'imdb_score': fields.Float(desciption='imdb score'),
+        'popularity_99': fields.Float(description='popularity_99'),
         'genre': fields.List(fields.String, description='list of genre')
     })
 
