@@ -1,0 +1,1 @@
+web: gunicorn fynd_assigment.wsgi --log-file -
