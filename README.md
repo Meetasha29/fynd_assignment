@@ -1,6 +1,7 @@
 # fynd_assignment
 
 Heroku APP name - imdb-movie-service
+Heroku APP URL - https://imdb-movie-service.herokuapp.com
 Postman Collection - https://www.getpostman.com/collections/ba06e12280b234327afd
 Admin User Authentication Token - "admin1234"
 
